@@ -21,3 +21,10 @@ const myfunction = function(){
 
 }
 
+//Memory
+
+//stack -- Primitive types
+
+//heap -- non-primitive types
+
+let myyoutubename ="Girish"
