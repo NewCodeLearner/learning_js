@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur JS</h1>
+    <button id ="start">Start</button>
+    <button id ="stop">Stop</button>
+    
+</body>
+<script>
+
+//declare interval outside of function scope 
+//so it should be available for all functions
+let interval
+
+function consolelogging(){
+    const logme = function() {
+            console.log("Girish")
+    }
+    interval =setInterval(logme,1000);
+    }
+      document.querySelector('#start')
+      .addEventListener('click',consolelogging,false);
+    //stop action get reference of stop and clearinterval
+      document.querySelector('#stop')
+      .addEventListener('click',function(){
+        clearInterval(interval);
+        console.log("stopped")
+        },false);
+
+</script>
+</html>
